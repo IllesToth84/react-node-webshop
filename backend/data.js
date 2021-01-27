@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+    users: [
+        {
+            name: 'Illes',
+            email: 'illestothvisualz@gmail.com',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: true
+        },
+        {
+            name: 'Donald',
+            email: 'user@example.com',
+            password: bcrypt.hashSync('password', 8),
+            isAdmin: false
+        },
+    ],
     products: [
         {
-            _id: '1',
             name: 'Shoe 1',
             category: 'Shoes',
             image: '/images/p1.jpg',
@@ -12,8 +27,7 @@ const data = {
             numReviews: 11,
             description: 'high quality product',
         },
-             {
-            _id: '2',
+        {
             name: 'Shoe 2',
             category: 'Shoes',
             image: '/images/p2.jpg',
@@ -24,8 +38,7 @@ const data = {
             numReviews: 8,
             description: 'high quality product',
         },
-             {
-            _id: '3',
+        {
             name: 'Shoe 3',
             category: 'Shoes',
             image: '/images/p3.jpg',
@@ -36,8 +49,7 @@ const data = {
             numReviews: 15,
             description: 'high quality product',
         },
-             {
-            _id: '4',
+        {
             name: 'Shoe 4',
             category: 'Shoes',
             image: '/images/p4.jpg',
@@ -48,8 +60,7 @@ const data = {
             numReviews: 10,
             description: 'high quality product',
         },
-             {
-            _id: '5',
+        {
             name: 'Shoe 5',
             category: 'Shoes',
             image: '/images/p5.jpg',
@@ -60,8 +71,7 @@ const data = {
             numReviews: 16,
             description: 'high quality product',
         },
-                {
-            _id: '6',
+        {
             name: 'Shoe 6',
             category: 'Shoes',
             image: '/images/p6.jpg',

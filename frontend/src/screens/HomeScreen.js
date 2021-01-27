@@ -9,7 +9,7 @@ import { listProducts } from '../actions/productActions';
 export default function HomeScreen() {
     const dispatch = useDispatch();
     const productList = useSelector((state) => state.productList);
-    const { loading, error, products } = productList;
+    const { loading, error } = productList;
 
     useEffect(() => {
         dispatch(listProducts());
