@@ -3,6 +3,7 @@ import expressAsyncHandler from 'express-async-handler';
 import mongoose from 'mongoose';
 import data from '../data.js';
 import Product from '../models/productModel.js';
+import cors from 'cors';
 
 const productRouter = express.Router();
 
@@ -24,9 +25,10 @@ productRouter.get(
 );
 
 productRouter.get(
-    '/:id',
-    expressAsyncHandler(async (req, res) => {
-         const product = await Product.findById(mongoose.Types.ObjectId(req.params.id));
+    `/:id`,
+    cors(),
+     expressAsyncHandler(async (req, res) => {
+         const product = await Product.findById/*(mongoose.Types.ObjectId*/(req.params.id)/*)*/;
         if (product) {
             res.send(product);
         } else {
