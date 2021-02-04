@@ -34,7 +34,12 @@ productRouter.get(
         } else {
             res.status(404).send({ message: 'Product Not Found' });
         }
-    })
+    },
+    (req, res) => {
+        console.log(req);
+        console.log(res);
+    }
+    )
 );
 
 export default productRouter;

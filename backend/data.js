@@ -81,6 +81,17 @@ const data = {
             rating: 4,
             numReviews: 12,
             description: 'high quality product',
+        },
+        {
+            name: 'Shoe 7',
+            category: 'Shoes',
+            image: '/images/p7.jpg',
+            price: 145,
+            countInStock: 10,
+            brand: 'DC',
+            rating: 4.5,
+            numReviews: 13,
+            description: 'high quality product',
         }
     ],
 };

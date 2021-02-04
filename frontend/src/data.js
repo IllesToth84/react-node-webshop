@@ -71,7 +71,7 @@ const data = {
             rating: 4,
             numReviews: 12,
             description: 'high quality product',
-        }
+        },
     ],
 };
 

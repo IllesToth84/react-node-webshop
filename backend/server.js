@@ -2,8 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
-import cors from 'cors';
- 
+  
 const app = express();
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/pureChase', {
     useNewUrlParser: true,
